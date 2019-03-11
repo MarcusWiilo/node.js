@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/MarcusWiilo/node.js/issues"
   },
-  "homepage": "https://github.com/MarcusWiilo/node.js#readme"
+  "homepage": "https://github.com/MarcusWiilo/node.js#readme",
+  "dependencies": {
+    "express": "4.16.3"
+  }
 }
