@@ -24,7 +24,7 @@ app.get('/livros', function(req, resp) {
                 <meta charset="utf-8">
             </head>
             <body>
-                <h1> Listagem de Livros </h1>
+                <h1> Lista de livros  </h1>
             </body> 
         </html>
     `);
