@@ -6,7 +6,7 @@ app.listen(8080, function(){
 });
 
 app.get('/teste', function(req, res){
-    console.log('Recebido a requisição de teste na porta 8000')
+    console.log('Recebido a requisição de teste na porta 8080')
     res.send('Ok Carai');
 });
 
