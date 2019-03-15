@@ -1,10 +1,11 @@
 {
-    "editor.fontSize": 18,
     "workbench.colorTheme": "Visual Studio Dark",
     "workbench.iconTheme": null,
     "workbench.view.alwaysShowHeaderActions": true,
     "workbench.quickOpen.preserveInput": true,
     "workbench.list.horizontalScrolling": true,
     "workbench.list.keyboardNavigation": "filter",
-    "workbench.list.openMode": "doubleClick"
+    "workbench.list.openMode": "doubleClick",
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 20
 }

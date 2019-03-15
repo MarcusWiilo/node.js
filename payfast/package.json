@@ -10,6 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.16.2",
+    "body-parser": "^1.18.3",
+    "consign": "^0.1.6",
+    "curl": "^0.1.4",
     "request": "^2.81.0",
     "superagent": "^3.5.2"
   }
