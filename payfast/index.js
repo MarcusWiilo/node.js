@@ -1,6 +1,6 @@
 var app = require('./config/custom-express')();
 
-app.listen(8080, function(){
-    console.log('Servidor rodando na porta 8080.');
+app.listen(4000, function(){
+    console.log('Servidor rodando na porta 4000.');
 });
 

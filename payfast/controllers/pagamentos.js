@@ -9,13 +9,21 @@ module.exports = function(app){
         console.log('procesando uma requisição de um novo pagamento');
 
         pagamento.status = 'CRIADO';
-        pagamento.DATA = NEW Date;
+        pagamento.data = new Date;
 
-        res.send('Ok pora.');
+        var connection = app.persistencia.connectionFactory();
+        var pagamentoDao = new app.persistencia.PagamentoDao(conne);
+
+        pagamentoDao.salva(pagamento, function(erro, resultado){
+            console.log('pagamento criado');
+            res.json(pagamento);
+
+        });
+
     });
 }
 
-
+/*
 const http = require('http');
 const apiKey = 'bB376D7707816C151723D7258F5B0ED298998925965FF23DC3C509077EDBF9EC9';
 
@@ -27,4 +35,4 @@ request('https://api.solarview.com.br/v1/authenticate/', function (error, respon
   console.log('error:', error); // Print the error if one occurred
   console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
   console.log('body:', body); // Print the HTML for the Google homepage.
-});
+}); */
