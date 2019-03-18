@@ -7,6 +7,5 @@
     "workbench.list.keyboardNavigation": "filter",
     "workbench.list.openMode": "doubleClick",
     "editor.minimap.enabled": false,
-    "editor.fontSize": 20,
     "python.pythonPath": "C:\\Users\\marcu\\Anaconda3\\envs\\dog-project\\python.exe"
 }
