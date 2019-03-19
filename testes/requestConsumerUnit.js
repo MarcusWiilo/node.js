@@ -12,12 +12,11 @@ request(
         headers : {
             "Authorization" : auth,
             "cache-control" : "no-cache",
-            "solarview-token": "a350e597c6d37763cf2c052d7e1376a4",
+            "solarview-token": "7f553a5198c34baf5cb9f1e81759b69c",
         }
     },
 
     function (error, response, body) {
-
         console.log(body);
         // Do more stuff with 'body' here
     }
