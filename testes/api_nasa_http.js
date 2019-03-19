@@ -1,7 +1,13 @@
 const https = require('https');
 
-https.get('https://api.solarview.com.br/v1/authenticate/', (resp) => {
-  let solarview-token = '1a239bc916aee30a3a58900b1235670f';
+https.get('https://api.solarview.com.br/v1/consumerUnit/1044/finantial/generationEnergy/20190207,20190207,0', (resp) => {
+  let api_key = 'a350e597c6d37763cf2c052d7e1376a4';
+  var auth = "Basic " + new Buffer.from(username + ":" + password).toString("base64");
+  let headers = {
+    "Authorization" : auth,
+    "cache-control" : "no-cache",
+    "solarview-token": "a350e597c6d37763cf2c052d7e1376a4",
+  }
 
   // A chunk of data has been recieved.
   resp.on('data', (chunk) => {

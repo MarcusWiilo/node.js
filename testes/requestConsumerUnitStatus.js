@@ -1,10 +1,7 @@
-
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-
 var request = require('request'),
 username = "ti@taldi.com.br",
 password = "Taldi2008",
-url = "https://api.solarview.com.br/v1/authenticate/"
+url = "https://api.solarview.com.br/v1/consumerUnit/1692/status/"
 auth = "Basic " + new Buffer.from(username + ":" + password).toString("base64");
 
 request(
@@ -15,15 +12,15 @@ request(
         headers : {
             "Authorization" : auth,
             "cache-control" : "no-cache",
-            "solarview-apikey": "B376D7707816C151723D7258F5B0ED298998925965FF23DC3C509077EDBF9EC9",
+            "solarview-token": "a350e597c6d37763cf2c052d7e1376a4",
         }
     },
 
     function (error, response, body) {
 
-        console.log('Fazendo a requisição na API SolarView ' + body);
+        console.log(body);
         // Do more stuff with 'body' here
     }
-
 );
 
+console.log('Fazendo a requisição na API SolarView ');
